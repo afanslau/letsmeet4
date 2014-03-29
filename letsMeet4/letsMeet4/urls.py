@@ -1,4 +1,6 @@
+
 from django.conf.urls import patterns, include, url
+from meet import views
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -6,7 +8,7 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'letsMeet4.views.home', name='home'),
+    url(r'^$', views.index, name='index'),
     # url(r'^letsMeet4/', include('letsMeet4.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
