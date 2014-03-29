@@ -15,13 +15,26 @@
 		}
 
 		function onLinkedInAuth() {
-     		IN.API.Profile("me").result(displayProfiles);
+		 	 IN.API.Connections("me")
+		    	.fields("firstName", "lastName", "industry")
+		    	.params({"count":20})
+			    .result(displayConnections)
+			    .error(displayConnectionsErrors);
 		}
 
-		function displayProfiles(profiles) {
-		     member = profiles.values[0];
-		     document.getElementById("profiles").innerHTML = 
-		          "<p id=\"" + member.id + "\">Hello " +  member.firstName + " " + member.lastName + "</p>";
+
+		function displayConnections(connections) {
+		  var connectionsDiv = document.getElementById("connections");
+
+		  var members = connections.values; // The list of members you are connected to
+		  for (var member in members) {
+		    connectionsDiv.innerHTML += "<p>" + members[member].firstName + " " + members[member].lastName
+		      + " works in the " + members[member].industry + " industry";
+		  }     
+		}
+
+		function displayConnectionsErrors(error) { 
+			alert('Error retrieving connections');
 		}
 
 
@@ -33,7 +46,7 @@
 		<p>hello world</p>
 
 
-		<div id="profiles"></div>
+		<div id="connections"></div>
 
 
 	</body>
