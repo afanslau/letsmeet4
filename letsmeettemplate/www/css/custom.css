@@ -1,0 +1,46 @@
+body {
+	text-transform: none;
+}
+
+.marketing {
+	color: white;
+	text-shadow: 0 1px 3px #222;
+	padding-top: 80px ;
+	padding-bottom: 80px;
+	font-color: white;
+	background: #202021 url("../img/coffee.jpg") no-repeat ;
+	background-size: cover;
+}
+
+.centerContent {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container {
+	width:80%
+}
+
+h1 {
+	font-size: 5em;
+	margin-top: 0px;
+}
+
+.marketFont {
+	margin-top: 30px;
+	font-size: 1.4em;
+}
+
+.navbar {
+	width
+}
+
+.navbar-text {
+	float:right;
+}
+
+@media screen and (max-width: 528px){
+	h1 {
+		font-size: 3em;
+	}
+}
