@@ -609,7 +609,7 @@ dd {
 @media (min-width: 768px) {
   .dl-horizontal dt {
     float: left;
-    width: 160px;v
+    width: 160px;
     overflow: hidden;
     clear: left;
     text-align: right;
@@ -3929,7 +3929,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-text {
-    /*float: left;*/
+    float: left;
     margin-right: 15px;
     margin-left: 15px;
   }
