@@ -5,8 +5,7 @@ body {
 .marketing {
 	color: white;
 	text-shadow: 0 1px 3px #222;
-	padding-top: 80px ;
-	padding-bottom: 80px;
+	
 	font-color: white;
 	background: #202021 url("../img/coffee.jpg") no-repeat ;
 	background-size: cover;
@@ -14,6 +13,8 @@ body {
 
 .centerContent {
 	width: 80%;
+	margin-top: 60px ;
+	margin-bottom: 60px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -43,4 +44,30 @@ h1 {
 	h1 {
 		font-size: 3em;
 	}
+}
+
+#about {
+	margin: 20px 40px;
+	font-size: 1.2em;
+}
+
+#profilepic {
+	height:150px;
+}
+.profile {
+	max-height: 150px;
+	width: 55%;
+	margin-top: 20px ;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#calendaroptions {
+	height: 100px;
+	background: #D6D6C2;
+}
+
+#calendaroptions .row h2 {
+	text-align:center;
 }
