@@ -17,9 +17,7 @@ body {
 	margin-bottom: 60px;
 	margin-left: auto;
 	margin-right: auto;
-	border-style:solid;
-    border-width:1px;
-    min-width: 350px;
+
 }
 .container {
 	width:80%
@@ -74,6 +72,30 @@ h1 {
 	text-align:center;
 }
 
-#calendarcontent {
-	width:400px;
+.centerprofile {
+
+	width:80%;
+	margin-top:30px;
+	margin-bottom:30px;
+	margin-left:auto;
+	margin-right:auto;
 }
+
+.profilescroll {
+	height:630px;
+	width:100%;
+	overflow-y:scroll;
+}
+
+.status {
+	background-color: grey;
+	color:white;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#dropbut {
+	margin-top:10px;
+}
+
